@@ -1,0 +1,48 @@
+/* Custom styles that complement Tailwind */
+body {
+    line-height: 1.6;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.resume-container h1, 
+.resume-container h2, 
+.resume-container h3 {
+    color: #4f46e5;
+}
+
+.resume-container h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.resume-container p {
+    margin-bottom: 0.5rem;
+}
+
+/* Animation for AI suggestions modal */
+#aiModal {
+    transition: opacity 0.3s ease;
+}
+
+/* Print styles for resume */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #resumePreview, #resumePreview * {
+        visibility: visible;
+    }
+    #resumePreview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
